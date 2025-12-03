@@ -16,7 +16,7 @@ public class SimulatoreCalcio {
     public static void main(String[] args) {
         MainSimulatore m;
 
-        m = new Mainsimulatore();
+        m = new MainSimulatore();
 
         m.avvia();
     }

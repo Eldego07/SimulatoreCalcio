@@ -12,6 +12,8 @@ public class Centrocampista extends Giocatore {
     public Centrocampista(String nome, String cognome, int forza){
         super (nome, cognome, forza);
     }
+    
+    @Override
     public void infortunio(){
 
     }
