@@ -16,6 +16,9 @@ public class Centrocampista extends Giocatore {
     @Override
     public void infortunio(int danno){
         this.forza-=danno+4;
+        if(this.forza<=0){
+            this.forza=0;
+        }
     }
 
     @Override
