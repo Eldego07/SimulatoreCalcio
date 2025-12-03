@@ -15,5 +15,6 @@ public class Partita {
     
     public Partita(Squadra squadraCasa, Squadra squadraTrasferta){
         this.squadraTrasferta=squadraTrasferta;
+        this.squadraCasa=squadraCasa;
     }
 }
