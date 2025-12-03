@@ -17,4 +17,13 @@ public class Partita {
         this.squadraTrasferta=squadraTrasferta;
         this.squadraCasa=squadraCasa;
     }
+    
+    public void gioca(){
+        
+    }
+    
+    public void evento(){
+        
+    }
+    
 }
