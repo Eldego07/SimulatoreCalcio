@@ -21,8 +21,11 @@ public class Giocatore {
         this.forza = forza;
     }
     
-    public void infortunio(){
-        
+    public void infortunio(int danno){
+        this.forza-=danno;
+        if(this.forza<=0){
+            this.forza=0;
+        }
     }
 
     public String getNome() {

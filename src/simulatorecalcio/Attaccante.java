@@ -15,8 +15,11 @@ public class Attaccante extends Giocatore{
     }
     
     @Override
-    public void infortunio(){
-        
+    public void infortunio(int danno){
+        this.forza-=danno+5;
+        if(this.forza<=0){
+            this.forza=0;
+        }
     }
 
     @Override

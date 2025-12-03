@@ -17,8 +17,8 @@ public class Portiere extends Giocatore{
     }
     
     @Override
-    public void infortunio(){
-        
+    public void infortunio(int danno){
+        this.forza-=danno+1;
     }
 
     public int getDifesa() {
