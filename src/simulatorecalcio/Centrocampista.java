@@ -8,9 +8,16 @@ package simulatorecalcio;
  *
  * @author casolaro.diego
  */
-public class Centrocampista {
-    public Centrocampista(String nome, String cognome, int potenza){
+public class Centrocampista extends Giocatore {
+    public Centrocampista(String nome, String cognome, int forza){
         super (nome, cognome, forza);
     }
+    public void infortunio(){
 
+    }
+
+    @Override
+    public String toString() {
+        return "Centrocampista{}";
+    }
 }
