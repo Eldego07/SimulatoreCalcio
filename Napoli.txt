@@ -1,0 +1,24 @@
+SQUADRA NAPOLI
+1 portiere
+4 difensori
+5 centrocampisti
+1 attaccanti
+
+Attacanti:
+Romelu Lukaku (forza: 84)
+
+Centrocampisti:
+Scott McTominay (forza: 85)
+Kevin De Bruyne (forza: 87)
+Stanislav Lobotka (forza: 83)
+Andre'-Franck Zambo Anguissa (forza: 82)
+Billy Gilmour (forza: 74)
+
+Difensori:
+Giovanni Di Lorenzo (forza: 83)
+Amir Rrahmani (forza: 83)
+Alessandro Buongiorno (forza: 82)
+Miguel Gutiérrez (forza: 81)
+
+Portiere:
+Alex Meret (forza: 82, velocità: 69)

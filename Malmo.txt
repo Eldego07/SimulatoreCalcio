@@ -1,0 +1,24 @@
+SQUADRA MALMO
+1 portiere
+3 difensori
+4 centrocampisti 
+3 attacanti
+
+Attacnti: 
+Erik Botheim (forza: 71)
+Anders Christiansen (forza: 72)
+Daníel Guðjohnsen (forza: 63)
+
+Centrocampisti:
+Lasse Berg Johnsen (forza: 74)
+Otto Rosengren (forza: 71)
+Pontus Jansson (forza: 73)
+Oliver Berg (forza: 67)
+
+Difensori:
+Busanello (forza: 73)
+Jens Stryger Larsen (forza: 72)
+Hugo Bolin (forza: 70)
+
+Portiere: 
+Robin Olsen (forza: 73, velocità: 73)
