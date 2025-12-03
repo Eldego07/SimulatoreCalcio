@@ -13,12 +13,16 @@ import java.util.Objects;
 public class Giocatore {
     protected String nome;
     protected String cognome;
-    protected String forza;
+    protected int forza;
     
-    public Giocatore(String nome, String cognome, String forza) {
+    public Giocatore(String nome, String cognome, int forza) {
         this.nome = nome;
         this.cognome = cognome;
         this.forza = forza;
+    }
+    
+    public void infortunio(){
+        
     }
 
     public String getNome() {
@@ -29,7 +33,7 @@ public class Giocatore {
         return cognome;
     }
 
-    public String getForza() {
+    public int getForza() {
         return forza;
     }
 
@@ -41,7 +45,7 @@ public class Giocatore {
         this.cognome = cognome;
     }
 
-    public void setForza(String forza) {
+    public void setForza(int forza) {
         this.forza = forza;
     }
 
