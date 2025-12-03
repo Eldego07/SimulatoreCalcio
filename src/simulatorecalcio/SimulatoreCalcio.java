@@ -14,11 +14,11 @@ public class SimulatoreCalcio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Test t;
+        MainSimulatore m;
 
-        t = new Test();
+        m = new Mainsimulatore();
 
-        t.avvia();
+        m.avvia();
     }
     
 }
