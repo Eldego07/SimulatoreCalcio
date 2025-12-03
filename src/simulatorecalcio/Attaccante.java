@@ -8,6 +8,19 @@ package simulatorecalcio;
  *
  * @author casolaro.diego
  */
-public class Attaccante {
+public class Attaccante extends Giocatore{
+
+    public Attaccante( String nome, String cognome, int forza) {
+        super(nome, cognome, forza);
+    }
     
+    @Override
+    public void infortunio(){
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Attaccante{" +super.toString()+ '}';
+    }
 }
