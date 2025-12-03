@@ -9,5 +9,8 @@ package simulatorecalcio;
  * @author casolaro.diego
  */
 public class Centrocampista {
-    
+    public Centrocampista(String nome, String cognome, int potenza){
+        super (nome, cognome, forza);
+    }
+
 }
