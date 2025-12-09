@@ -29,6 +29,7 @@ public class Partita {
             boolean squadraScelta;
             if(squadraCasa.getForzaTot()>=(squadraTrasferta.getForzaTot()*2)&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 1
+                prob=random.nextInt(0,100);
                 if(prob>25&&prob<38){
                     squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
                     gM.stampaGoal(squadraTrasferta);
@@ -40,6 +41,7 @@ public class Partita {
             }
             else if(squadraCasa.getForzaTot()>squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 1
+                prob=random.nextInt(0,100);
                 if(prob>25&&prob<31){
                     squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
                     gM.stampaGoal(squadraTrasferta);
@@ -51,6 +53,7 @@ public class Partita {
             }
             else if(squadraCasa.getForzaTot()<squadraTrasferta.getForzaTot()/2&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 2
+                prob=random.nextInt(0,100);
                 if(prob>25&&prob<31){
                     squadraCasa.setGoal(squadraCasa.getGoal() + 1);
                     gM.stampaGoal(squadraCasa);
@@ -60,6 +63,7 @@ public class Partita {
             }
             else if(squadraCasa.getForzaTot()<=squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 2
+                prob=random.nextInt(0,100);
                 if(prob>25&&prob<38){
                     squadraCasa.setGoal(squadraCasa.getGoal() + 1);
                     gM.stampaGoal(squadraCasa);
