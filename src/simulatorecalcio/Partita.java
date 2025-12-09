@@ -43,7 +43,10 @@ public class Partita {
                 squadraScelta=random.nextBoolean();
                 rndGioca=random.nextInt(0,10);
                 if(squadraScelta){
-                   
+                   s1.getGiocatoreN(rndGioca).infortunio(danno);
+                }
+                else{
+                   s2.getGiocatoreN(rndGioca).infortunio(danno);
                 }
             }
         }

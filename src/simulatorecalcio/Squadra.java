@@ -62,6 +62,14 @@ public class Squadra {
      * 
      * @return 
      */
+    public Giocatore getGiocatoreN(int n) {
+        return giocatori.get(n);
+    }
+    
+    /**
+     * 
+     * @return 
+     */
     public String getStadio() {
         return stadio;
     }
