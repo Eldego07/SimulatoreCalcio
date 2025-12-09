@@ -21,4 +21,5 @@ Jens Stryger Larsen (forza: 72)
 Hugo Bolin (forza: 70)
 
 Portiere: 
-Robin Olsen (forza: 73, velocità: 73)
+
+Robin Olsen (forza: 73, difesa: 77)
