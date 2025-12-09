@@ -29,23 +29,45 @@ public class Partita {
             boolean squadraScelta;
             if(squadraCasa.getForzaTot()>=(squadraTrasferta.getForzaTot()*2)&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 1
-                squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                gM.stampaGoal(squadraCasa);
+                if(prob>25&&prob<38){
+                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+                    gM.stampaGoal(squadraTrasferta);
+                }
+                else{
+                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+                    gM.stampaGoal(squadraCasa);
+                }
             }
             else if(squadraCasa.getForzaTot()>squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 1
-                squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                gM.stampaGoal(squadraCasa);
+                if(prob>25&&prob<31){
+                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+                    gM.stampaGoal(squadraTrasferta);
+                }
+                else{
+                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+                    gM.stampaGoal(squadraCasa);
+                }
             }
             else if(squadraCasa.getForzaTot()<squadraTrasferta.getForzaTot()/2&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 2
+                if(prob>25&&prob<31){
+                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+                    gM.stampaGoal(squadraCasa);
+                }
                 squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
                 gM.stampaGoal(squadraTrasferta);
             }
             else if(squadraCasa.getForzaTot()<=squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 2
-                squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                gM.stampaGoal(squadraTrasferta);
+                if(prob>25&&prob<38){
+                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+                    gM.stampaGoal(squadraCasa);
+                }
+                else{
+                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+                    gM.stampaGoal(squadraTrasferta);
+                }
             }
             //codice di richiamo all'infortunio
             if(prob >= 0 && prob <= 3){
