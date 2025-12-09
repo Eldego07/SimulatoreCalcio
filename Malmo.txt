@@ -1,25 +1,13 @@
-SQUADRA MALMO
-1 portiere
-3 difensori
-4 centrocampisti 
-3 attacanti
-
-Attacnti: 
-Erik Botheim (forza: 71)
-Anders Christiansen (forza: 72)
-Daníel Guðjohnsen (forza: 63)
-
-Centrocampisti:
-Lasse Berg Johnsen (forza: 74)
-Otto Rosengren (forza: 71)
-Pontus Jansson (forza: 73)
-Oliver Berg (forza: 67)
-
-Difensori:
-Busanello (forza: 73)
-Jens Stryger Larsen (forza: 72)
-Hugo Bolin (forza: 70)
-
-Portiere: 
-
-Robin Olsen (forza: 73, difesa: 77)
+Squadra sB = new Squadra("Malmo FF", "Eleda Stadion");
+        Giocatore gB1, gB2, gB3, gB4, gB5, gB6, gB7, gB8, gB9, gB10, gB11;
+        gB1 = new Portiere("Robin", "Olsen", 73, 77);
+        gB2 = new Difensore("Gabriel", "Busanello", 73);
+        gB3 = new Difensore("Jens Stryger", "Larsen", 72);
+        gB4 = new Difensore("Hugo", "Bolin", 70);
+        gB5 = new Centrocampista("Lasse Berg", "Johnsen", 74);
+        gB6 = new Centrocampista("Otto", "Rosengren", 71);
+        gB7 = new Centrocampista("Pontus", "Jansson", 73);
+        gB8 = new Centrocampista("Oliver", "Berg", 67);
+        gB9 = new Attaccante("Erik", "Botheim", 71);
+        gB10 = new Attaccante("Anders", "Christiansen", 72);
+        gB11 = new Attaccante("Daniel", "Guthjohnsen", 73);
