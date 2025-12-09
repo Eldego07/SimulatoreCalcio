@@ -1,25 +1,13 @@
-SQUADRA NAPOLI
-1 portiere
-4 difensori
-5 centrocampisti
-1 attaccanti
-
-Attacanti:
-Romelu Lukaku (forza: 84)
-
-Centrocampisti:
-Scott McTominay (forza: 85)
-Kevin De Bruyne (forza: 87)
-Stanislav Lobotka (forza: 83)
-Andre'-Franck Zambo Anguissa (forza: 82)
-Billy Gilmour (forza: 74)
-
-Difensori:
-Giovanni Di Lorenzo (forza: 83)
-Amir Rrahmani (forza: 83)
-Alessandro Buongiorno (forza: 82)
-Miguel Gutiérrez (forza: 81)
-
-Portiere:
-
-Alex Meret (forza: 82, difesa: 81)
+Squadra sA = new Squadra("Napoli", "Stadio Diego Armando Maradona");
+        Giocatore gA1, gA2, gA3, gA4, gA5, gA6, gA7, gA8, gA9, gA10, gA11;
+        gA1 = new Portiere("Alex", "Meret", 82, 81);
+        gA2 = new Difensore("Giovanni", "Di Lorenzo", 83);
+        gA3 = new Difensore("Amir", "Rrahmani", 83);
+        gA4 = new Difensore("Alessandro", "Buongiorno", 82);
+        gA5 = new Difensore("Miguel", "Gutierrez", 81);
+        gA6 = new Centrocampista("Scott", "McTominay", 85);
+        gA7 = new Centrocampista("Kevin", "De Bruyne", 87);
+        gA8 = new Centrocampista("Stanislav", "Lobotka", 83);
+        gA9 = new Centrocampista("Andre'-Franck", "Zambo Anguissa", 82);
+        gA10 = new Centrocampista("Billy", "Gilmour", 74);
+        gA11 = new Attaccante("Romelu", "Lukaku", 84);
