@@ -15,38 +15,48 @@ public class Partita {
     private Squadra squadraTrasferta;
     private String risultato;
     private Random random=new Random();
+    private GestoreMessaggi gM;
    
     public Partita(Squadra squadraCasa, Squadra squadraTrasferta){
         this.squadraTrasferta=squadraTrasferta;
         this.squadraCasa=squadraCasa;
+        this.gM = new GestoreMessaggi();
     }
    
-    public void gioca(Squadra s1, Squadra s2){
+    public void gioca(){
         for(int i=0;i<90;i++){
             int prob=random.nextInt(0,100),danno,rndGioca;
             boolean squadraScelta;
-            if(s1.getForzaTot()>=(s2.getForzaTot()*2)&&prob>3&&prob<26){
+            if(squadraCasa.getForzaTot()>=(squadraTrasferta.getForzaTot()*2)&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 1
+                squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+                gM.stampaGoal(squadraCasa);
             }
-            else if(s1.getForzaTot()>s2.getForzaTot()&&prob>3&&prob<13){
+            else if(squadraCasa.getForzaTot()>squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 1
+                squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+                gM.stampaGoal(squadraCasa);
             }
-            else if(s1.getForzaTot()<s2.getForzaTot()/2&&prob>3&&prob<26){
+            else if(squadraCasa.getForzaTot()<squadraTrasferta.getForzaTot()/2&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 2
+                squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+                gM.stampaGoal(squadraTrasferta);
             }
-            else if(s1.getForzaTot()<=s2.getForzaTot()&&prob>3&&prob<13){
+            else if(squadraCasa.getForzaTot()<=squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 2
+                squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+                gM.stampaGoal(squadraTrasferta);
             }
             //codice di richiamo all'infortunio
-            if(prob>=0&&prob<=3){
-                danno=random.nextInt(1,50);
-                squadraScelta=random.nextBoolean();
-                rndGioca=random.nextInt(0,10);
+            if(prob >= 0 && prob <= 3){
+                danno = random.nextInt(1,50);
+                squadraScelta = random.nextBoolean();
+                rndGioca = random.nextInt(0,11);
                 if(squadraScelta){
-                   s1.getGiocatoreN(rndGioca).infortunio(danno);
+                   squadraCasa.getGiocatoreN(rndGioca).infortunio(danno);
                 }
                 else{
-                   s2.getGiocatoreN(rndGioca).infortunio(danno);
+                   squadraTrasferta.getGiocatoreN(rndGioca).infortunio(danno);
                 }
             }
         }

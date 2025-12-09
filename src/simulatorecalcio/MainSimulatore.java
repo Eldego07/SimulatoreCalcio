@@ -38,10 +38,10 @@ public class MainSimulatore {
         
         Squadra sB = new Squadra("Malmo FF", "Eleda Stadion");
         Giocatore gB1, gB2, gB3, gB4, gB5, gB6, gB7, gB8, gB9, gB10, gB11;
-        gB1 = new Portiere("Robin", "Olsen", 73, 81);
-        gB2 = new Difensore("Gabriel", "Busanello", 83);
-        gB3 = new Difensore("Jens Stryger", "Larsen", 83);
-        gB4 = new Difensore("Hugo", "Bolin", 82);
+        gB1 = new Portiere("Robin", "Olsen", 73, 77);
+        gB2 = new Difensore("Gabriel", "Busanello", 73);
+        gB3 = new Difensore("Jens Stryger", "Larsen", 72);
+        gB4 = new Difensore("Hugo", "Bolin", 70);
         gB5 = new Centrocampista("Lasse Berg", "Johnsen", 74);
         gB6 = new Centrocampista("Otto", "Rosengren", 71);
         gB7 = new Centrocampista("Pontus", "Jansson", 73);
@@ -62,6 +62,7 @@ public class MainSimulatore {
         sB.aggiungiGiocatore(gB10);
         sB.aggiungiGiocatore(gB11);
         
-        
+        Partita p = new Partita(sA, sB);
+        p.gioca();
     }
 }
