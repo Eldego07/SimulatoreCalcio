@@ -21,4 +21,5 @@ Alessandro Buongiorno (forza: 82)
 Miguel Gutiérrez (forza: 81)
 
 Portiere:
-Alex Meret (forza: 82, velocità: 69)
+
+Alex Meret (forza: 82, difesa: 81)
