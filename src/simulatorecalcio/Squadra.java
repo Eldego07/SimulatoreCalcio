@@ -14,6 +14,7 @@ public class Squadra {
     private String nome;
     private String stadio;
     private int forzaTot;
+    private int goal;
     private ArrayList<Giocatore> giocatori;
 
     /**
@@ -26,6 +27,7 @@ public class Squadra {
         this.stadio = stadio;
         this.giocatori = new ArrayList<>(11);
         this.forzaTot = 0;
+        this.goal = 0;
     }
 
     /**
@@ -86,6 +88,14 @@ public class Squadra {
      * 
      * @return 
      */
+    public int getGoal() {
+        return goal;
+    }
+    
+    /**
+     * 
+     * @return 
+     */
     public ArrayList<Giocatore> getGiocatori() {
         return giocatori;
     }
@@ -104,6 +114,14 @@ public class Squadra {
      */
     public void setStadio(String stadio) {
         this.stadio = stadio;
+    }
+    
+    /**
+     * 
+     * @param goal
+     */
+    public void setGoal(int goal) {
+        this.goal = goal;
     }
 
     /**
