@@ -1,0 +1,13 @@
+Squadra sC = new Squadra("Barcelona FC", "Spotify Camp Nou");
+        Giocatore gC1, gC2, gC3, gC4, gC5, gC6, gC7, gC8, gC9, gC10, gC11;
+        gC1 = new Portiere("Joan", "Garcia", 83, 85);
+        gC2 = new Difensore("Alejandro", "Balde", 83);
+        gC3 = new Difensore("Pau", "Cubarsi", 82);
+        gC4 = new Difensore("Ronald", "Araujo", 83);
+        gC5 = new Difensore("Jules", "Kounde", 87);
+        gC6 = new Centrocampista("Pedri", "Gonzalez", 89);
+        gC7 = new Centrocampista("Frenkie", "De Jong", 87);
+        gC8 = new Centrocampista("Dani", "Olmo", 85);
+        gC9 = new Attaccante("Raphinha", "Dias", 89);
+        gC10 = new Attaccante("Ferran", "Torres", 83);
+        gC11 = new Attaccante("Lamine", "Yamal", 89);
