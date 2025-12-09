@@ -23,6 +23,6 @@ public class Centrocampista extends Giocatore {
 
     @Override
     public String toString() {
-        return "Centrocampista{} " + super.toString();
+        return "centrocampista {" + super.toString() + "}";
     }
 }

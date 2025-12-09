@@ -27,50 +27,53 @@ public class Partita {
         for(int i=0;i<90;i++){
             int prob=random.nextInt(0,100),danno,rndGioca;
             boolean squadraScelta;
-            if(squadraCasa.getForzaTot()>=(squadraTrasferta.getForzaTot()*2)&&prob>3&&prob<26){
+            rndGioca = random.nextInt(0,11);
+            if(squadraCasa.getForzaTot()>=(squadraTrasferta.getForzaTot()*1.5)&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 1
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<38){
+                if(prob>25&&prob<55){
                     squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta);
+                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca));
                 }
                 else{
                     squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa);
+                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
             }
             else if(squadraCasa.getForzaTot()>squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 1
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<31){
+                if(prob>25&&prob<70){
                     squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta);
+                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca));
                 }
                 else{
                     squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa);
+                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
             }
-            else if(squadraCasa.getForzaTot()<squadraTrasferta.getForzaTot()/2&&prob>3&&prob<26){
+            else if(squadraCasa.getForzaTot()<squadraTrasferta.getForzaTot()/1.5&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 2
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<31){
+                if(prob>25&&prob<50){
                     squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa);
+                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
-                squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                gM.stampaGoal(squadraTrasferta);
+                else {
+                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca));
+                }
             }
             else if(squadraCasa.getForzaTot()<=squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 2
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<38){
+                if(prob>25&&prob<70){
                     squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa);
+                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
                 else{
                     squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta);
+                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca));
                 }
             }
             //codice di richiamo all'infortunio
@@ -80,9 +83,11 @@ public class Partita {
                 rndGioca = random.nextInt(0,11);
                 if(squadraScelta){
                    squadraCasa.getGiocatoreN(rndGioca).infortunio(danno);
+                   gM.stampaInfortunio(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
                 else{
                    squadraTrasferta.getGiocatoreN(rndGioca).infortunio(danno);
+                   gM.stampaInfortunio(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca));
                 }
             }
         }
@@ -136,6 +141,6 @@ public class Partita {
 
     @Override
     public String toString() {
-        return "Partita{" + "squadraCasa=" + squadraCasa + ", squadraTrasferta=" + squadraTrasferta + ", risultato=" + risultato + '}';
+        return "La partita fra la squadra di casa " + squadraCasa.getNome() + " e la squadra di trasferta " + squadraTrasferta.getNome() + " e' finita " + squadraCasa.getGoal() + " - " + squadraTrasferta.getGoal();
     }
 }

@@ -24,6 +24,6 @@ public class Attaccante extends Giocatore{
 
     @Override
     public String toString() {
-        return "Attaccante{" +super.toString()+ '}';
+        return "attaccante {" + super.toString() + "}";
     }
 }

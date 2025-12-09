@@ -50,7 +50,7 @@ public class Portiere extends Giocatore{
 
     @Override
     public String toString() {
-        return "Portiere{" + "difesa=" + difesa + '}';
+        return "portiere {" + super.toString() + ", " + difesa + " di difesa}";
     }
     
     

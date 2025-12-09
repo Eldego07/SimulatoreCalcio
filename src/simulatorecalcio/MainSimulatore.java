@@ -4,12 +4,16 @@
  */
 package simulatorecalcio;
 
+import java.util.*;
+
 /**
  *
  * @author casolaro.diego
  */
 public class MainSimulatore {
     public void avvia(){
+        Scanner input = new Scanner(System.in);
+        
         Squadra sA = new Squadra("Napoli", "Stadio Diego Armando Maradona");
         Giocatore gA1, gA2, gA3, gA4, gA5, gA6, gA7, gA8, gA9, gA10, gA11;
         gA1 = new Portiere("Alex", "Meret", 82, 81);
@@ -62,7 +66,92 @@ public class MainSimulatore {
         sB.aggiungiGiocatore(gB10);
         sB.aggiungiGiocatore(gB11);
         
-        Partita p = new Partita(sA, sB);
+        Squadra sC = new Squadra("Barcelona FC", "Spotify Camp Nou");
+        Giocatore gC1, gC2, gC3, gC4, gC5, gC6, gC7, gC8, gC9, gC10, gC11;
+        gC1 = new Portiere("Joan", "Garcia", 83, 85);
+        gC2 = new Difensore("Alejandro", "Balde", 83);
+        gC3 = new Difensore("Pau", "Cubarsi", 82);
+        gC4 = new Difensore("Ronald", "Araujo", 83);
+        gC5 = new Difensore("Jules", "Kounde", 87);
+        gC6 = new Centrocampista("Pedri", "Gonzalez", 89);
+        gC7 = new Centrocampista("Frenkie", "De Jong", 87);
+        gC8 = new Centrocampista("Dani", "Olmo", 85);
+        gC9 = new Attaccante("Raphinha", "Dias", 89);
+        gC10 = new Attaccante("Ferran", "Torres", 83);
+        gC11 = new Attaccante("Lamine", "Yamal", 89);
+        
+        sC.aggiungiGiocatore(gC1);
+        sC.aggiungiGiocatore(gC2);
+        sC.aggiungiGiocatore(gC3);
+        sC.aggiungiGiocatore(gC4);
+        sC.aggiungiGiocatore(gC5);
+        sC.aggiungiGiocatore(gC6);
+        sC.aggiungiGiocatore(gC7);
+        sC.aggiungiGiocatore(gC8);
+        sC.aggiungiGiocatore(gC9);
+        sC.aggiungiGiocatore(gC10);
+        sC.aggiungiGiocatore(gC11);
+        
+        int scelta = 0;
+        Squadra sCasa = null, sTrasferta = null;
+        
+        while (scelta < 1 || scelta > 3) {
+            System.out.println("Scegli la squadra di casa");
+            System.out.println("1. Napoli");
+            System.out.println("2. Malmo");
+            System.out.println("3. Barcelona");
+            scelta = input.nextInt();
+            switch (scelta) {
+                case 1:
+                    sCasa = sA;
+                    scelta = 0;
+                    while (scelta < 1 || scelta > 2) {
+                        System.out.println("Scegli la squadra in trasferta");
+                        System.out.println("1. Malmo");
+                        System.out.println("2. Barcelona");
+                        scelta = input.nextInt();
+                        if (scelta == 1)
+                            sTrasferta = sB;
+                        else if (scelta == 2)
+                            sTrasferta = sC;
+                    }
+                    break;
+                case 2:
+                    sCasa = sB;
+                    scelta = 0;
+                    while (scelta < 1 || scelta > 2) {
+                        System.out.println("Scegli la squadra in trasferta");
+                        System.out.println("1. Napoli");
+                        System.out.println("2. Barcelona");
+                        scelta = input.nextInt();
+                        if (scelta == 1)
+                            sTrasferta = sA;
+                        else if (scelta == 2)
+                            sTrasferta = sC;
+                    }
+                    break;
+                case 3:
+                    sCasa = sC;
+                    scelta = 0;
+                    while (scelta < 1 || scelta > 2) {
+                        System.out.println("Scegli la squadra in trasferta");
+                        System.out.println("1. Napoli");
+                        System.out.println("2. Malmo");
+                        scelta = input.nextInt();
+                        if (scelta == 1)
+                            sTrasferta = sA;
+                        else if (scelta == 2)
+                            sTrasferta = sB;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        
+        
+        Partita p = new Partita(sCasa, sTrasferta);
         p.gioca();
+        System.out.println(p);
     }
 }
