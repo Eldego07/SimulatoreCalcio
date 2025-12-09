@@ -4,7 +4,7 @@
  */
 package simulatorecalcio;
 
-import java.util.Objects;
+import java.util.*;
 
 /**
  *
@@ -14,18 +14,39 @@ public class Partita {
     private Squadra squadraCasa;
     private Squadra squadraTrasferta;
     private String risultato;
-    
+    private Random random=new Random();
+   
     public Partita(Squadra squadraCasa, Squadra squadraTrasferta){
         this.squadraTrasferta=squadraTrasferta;
         this.squadraCasa=squadraCasa;
     }
-    
-    public void gioca(){
-        
-    }
-    
-    public void evento(){
-        
+   
+    public void gioca(Squadra s1, Squadra s2){
+        for(int i=0;i<90;i++){
+            int prob=random.nextInt(0,100),danno,rndGioca;
+            boolean squadraScelta;
+            if(s1.getForzaTot()>=(s2.getForzaTot()*2)&&prob>3&&prob<26){
+                //codice di richiamo per mettere un gol alla squadra 1
+            }
+            else if(s1.getForzaTot()>s2.getForzaTot()&&prob>3&&prob<13){
+                //codice di richiamo per mettere un gol alla squadra 1
+            }
+            else if(s1.getForzaTot()<s2.getForzaTot()/2&&prob>3&&prob<26){
+                //codice di richiamo per mettere un gol alla squadra 2
+            }
+            else if(s1.getForzaTot()<=s2.getForzaTot()&&prob>3&&prob<13){
+                //codice di richiamo per mettere un gol alla squadra 2
+            }
+            //codice di richiamo all'infortunio
+            if(prob>=0&&prob<=3){
+                danno=random.nextInt(1,50);
+                squadraScelta=random.nextBoolean();
+                rndGioca=random.nextInt(0,10);
+                if(squadraScelta){
+                   
+                }
+            }
+        }
     }
 
     public Squadra getSquadraCasa() {
@@ -78,5 +99,4 @@ public class Partita {
     public String toString() {
         return "Partita{" + "squadraCasa=" + squadraCasa + ", squadraTrasferta=" + squadraTrasferta + ", risultato=" + risultato + '}';
     }
-    
 }
