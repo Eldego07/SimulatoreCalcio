@@ -14,12 +14,15 @@ public class Partita {
     private Squadra squadraCasa;
     private Squadra squadraTrasferta;
     private String risultato;
+    private int forzaC, forzaT;
     private Random random=new Random();
     private GestoreMessaggi gM;
    
     public Partita(Squadra squadraCasa, Squadra squadraTrasferta){
         this.squadraTrasferta=squadraTrasferta;
         this.squadraCasa=squadraCasa;
+        forzaC=this.squadraCasa.getForzaTot();
+        forzaT=this.squadraTrasferta.getForzaTot();
         this.gM = new GestoreMessaggi();
     }
    
@@ -28,7 +31,7 @@ public class Partita {
             int prob=random.nextInt(0,100),danno,rndGioca;
             boolean squadraScelta;
             rndGioca = random.nextInt(0,11);
-            if(squadraCasa.getForzaTot()>=(squadraTrasferta.getForzaTot()*1.5)&&prob>3&&prob<26){
+            if(forzaC>=(forzaT*1.5)&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 1
                 prob=random.nextInt(0,100);
                 if(prob>25&&prob<55){
@@ -40,7 +43,7 @@ public class Partita {
                     gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
             }
-            else if(squadraCasa.getForzaTot()>squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
+            else if(forzaC>forzaT&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 1
                 prob=random.nextInt(0,100);
                 if(prob>25&&prob<70){
@@ -52,7 +55,7 @@ public class Partita {
                     gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca));
                 }
             }
-            else if(squadraCasa.getForzaTot()<squadraTrasferta.getForzaTot()/1.5&&prob>3&&prob<26){
+            else if(forzaC<forzaT/1.5&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 2
                 prob=random.nextInt(0,100);
                 if(prob>25&&prob<50){
@@ -64,7 +67,7 @@ public class Partita {
                     gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca));
                 }
             }
-            else if(squadraCasa.getForzaTot()<=squadraTrasferta.getForzaTot()&&prob>3&&prob<13){
+            else if(forzaC<=forzaT&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 2
                 prob=random.nextInt(0,100);
                 if(prob>25&&prob<70){
