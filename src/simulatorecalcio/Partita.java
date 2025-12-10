@@ -18,6 +18,11 @@ public class Partita {
     private Random random=new Random();
     private GestoreMessaggi gM;
    
+    /**
+     * 
+     * @param squadraCasa
+     * @param squadraTrasferta 
+     */
     public Partita(Squadra squadraCasa, Squadra squadraTrasferta){
         this.squadraTrasferta=squadraTrasferta;
         this.squadraCasa=squadraCasa;
@@ -26,6 +31,9 @@ public class Partita {
         this.gM = new GestoreMessaggi();
     }
    
+    /**
+     * 
+     */
     public void gioca(){
         for(int i=0;i<90;i++){
             int prob=random.nextInt(0,100),danno,rndGioca;
@@ -96,31 +104,60 @@ public class Partita {
         }
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Squadra getSquadraCasa() {
         return squadraCasa;
     }
 
+    /**
+     * 
+     * @param squadraCasa 
+     */
     public void setSquadraCasa(Squadra squadraCasa) {
         this.squadraCasa = squadraCasa;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Squadra getSquadraTrasferta() {
         return squadraTrasferta;
     }
 
+    /**
+     * 
+     * @param squadraTrasferta 
+     */
     public void setSquadraTrasferta(Squadra squadraTrasferta) {
         this.squadraTrasferta = squadraTrasferta;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getRisultato() {
         return risultato;
     }
 
+    /**
+     * 
+     * @param risultato 
+     */
     public void setRisultato(String risultato) {
         this.risultato = risultato;
     }
 
 
+    /**
+     * 
+     * @param obj
+     * @return 
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -142,6 +179,10 @@ public class Partita {
         return Objects.equals(this.squadraTrasferta, other.squadraTrasferta);
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "La partita fra la squadra di casa " + squadraCasa.getNome() + " e la squadra di trasferta " + squadraTrasferta.getNome() + " e' finita " + squadraCasa.getGoal() + " - " + squadraTrasferta.getGoal();
