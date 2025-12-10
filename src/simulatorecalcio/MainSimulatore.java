@@ -12,9 +12,10 @@ import java.util.*;
  */
 public class MainSimulatore {
     public void avvia(){
+        GestoreMessaggi gM = new GestoreMessaggi();
         Scanner input = new Scanner(System.in);
         
-        Squadra sA = new Squadra("Napoli", "Stadio Diego Armando Maradona");
+        Squadra sA = new Squadra("Napoli", "Diego Armando Maradona");
 
         sA.aggiungiGiocatore(new Portiere("Alex", "Meret", 82, 81));
         sA.aggiungiGiocatore(new Difensore("Giovanni", "Di Lorenzo", 83));
@@ -113,7 +114,7 @@ public class MainSimulatore {
             }
         }
         
-        
+        gM.stampaStadio(sCasa, sTrasferta);
         Partita p = new Partita(sCasa, sTrasferta);
         p.gioca();
         System.out.println(p);

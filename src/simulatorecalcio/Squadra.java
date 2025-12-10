@@ -14,39 +14,45 @@ public class Squadra {
     private String nome;
     private String stadio;
     private int forzaTot;
+    private int difesaTot;
     private int goal;
     private ArrayList<Giocatore> giocatori;
 
     /**
-     * 
-     * @param nome
-     * @param stadio 
+     * Metodo Costruttore di Squadra
+     * @param nome della squadra
+     * @param stadio della squadra
      */
     public Squadra(String nome, String stadio) {
         this.nome = nome;
         this.stadio = stadio;
         this.giocatori = new ArrayList<>(11);
         this.forzaTot = 0;
+        this.difesaTot = 0;
         this.goal = 0;
     }
 
     /**
-     * 
-     * @param g 
+     * Metodo che aggiunge un giocatore alla squadra
+     * @param g il giocatore da aggiungere
      */
     public void aggiungiGiocatore(Giocatore g) {
         if (g != null && !giocatori.contains(g)) {
+            if (g instanceof Portiere portiere)
+                difesaTot += portiere.getDifesa();
             giocatori.add(g);
             forzaTot += g.getForza();
         }
     }
     
     /**
-     * 
-     * @param g 
+     * Metodo che rimuove un giocatore dalla squadra
+     * @param g il giocatore da rimuovere
      */
     public void rimuoviGiocatore(Giocatore g) {
         if (g != null && giocatori.contains(g)) {
+            if (g instanceof Portiere portiere)
+                difesaTot -= portiere.getDifesa();
             giocatori.remove(g);
             forzaTot -= g.getForza();
         }
@@ -84,6 +90,14 @@ public class Squadra {
         return forzaTot;
     }
 
+    /**
+     * 
+     * @return 
+     */
+    public int getDifesaTot() {
+        return difesaTot;
+    }
+    
     /**
      * 
      * @return 

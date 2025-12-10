@@ -26,8 +26,8 @@ public class Partita {
     public Partita(Squadra squadraCasa, Squadra squadraTrasferta){
         this.squadraTrasferta=squadraTrasferta;
         this.squadraCasa=squadraCasa;
-        forzaC=this.squadraCasa.getForzaTot();
-        forzaT=this.squadraTrasferta.getForzaTot();
+        this.forzaC = this.squadraCasa.getForzaTot() - squadraTrasferta.getDifesaTot();
+        this.forzaT = this.squadraTrasferta.getForzaTot() - squadraCasa.getDifesaTot();
         this.gM = new GestoreMessaggi();
     }
    
@@ -35,7 +35,7 @@ public class Partita {
      * 
      */
     public void gioca(){
-        for(int i=0;i<90;i++){
+        for(int i = 0; i < 91; i++){
             int prob=random.nextInt(0,100),danno,rndGioca;
             boolean squadraScelta;
             rndGioca = random.nextInt(0,11);
@@ -100,6 +100,11 @@ public class Partita {
                    squadraTrasferta.getGiocatoreN(rndGioca).infortunio(danno);
                    gM.stampaInfortunio(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
                 }
+            }
+            try {
+                Thread.sleep(167);
+            } catch (InterruptedException ex) {
+                System.getLogger(GestoreMessaggi.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
             }
         }
     }
