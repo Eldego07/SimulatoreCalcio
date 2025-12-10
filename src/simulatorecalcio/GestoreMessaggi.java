@@ -9,11 +9,11 @@ package simulatorecalcio;
  * @author tadde
  */
 public class GestoreMessaggi {
-    public void stampaGoal(Squadra s, Giocatore g) {
-        System.out.println("Il giocatore " + g.toString() + " della squadra " + s.getNome() + " ha segnato");
+    public void stampaGoal(Squadra s, Giocatore g, int i) {
+        System.out.println("Il giocatore " + g.toString() + " della squadra " + s.getNome() + " ha segnato al "+i+"'");
     }
     
-    public void stampaInfortunio(Squadra s, Giocatore g) {
-        System.out.println("Il giocatore " + g.toString() + " della squadra " + s.getNome() + " si e' infortunato");
+    public void stampaInfortunio(Squadra s, Giocatore g,int i) {
+        System.out.println("Il giocatore " + g.toString() + " della squadra " + s.getNome() + " si e' infortunato al "+i+"'");
     }    
 }
