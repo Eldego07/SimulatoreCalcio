@@ -42,50 +42,22 @@ public class Partita {
             if(forzaC>=(forzaT*1.5)&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 1
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<55){
-                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
-                }
-                else{
-                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca),i);
-                }
+                segnaGoal(25,55,prob,rndGioca,i);
             }
             else if(forzaC>forzaT&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 1
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<70){
-                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
-                }
-                else{
-                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca),i);
-                }
+                segnaGoal(25,70,prob,rndGioca,i);
             }
             else if(forzaC<forzaT/1.5&&prob>3&&prob<26){
                 //codice di richiamo per mettere un gol alla squadra 2
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<50){
-                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca),i);
-                }
-                else {
-                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
-                }
+                segnaGoal(0,76,prob,rndGioca,i);
             }
             else if(forzaC<=forzaT&&prob>3&&prob<13){
                 //codice di richiamo per mettere un gol alla squadra 2
                 prob=random.nextInt(0,100);
-                if(prob>25&&prob<70){
-                    squadraCasa.setGoal(squadraCasa.getGoal() + 1);
-                    gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca),i);
-                }
-                else{
-                    squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
-                    gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
-                }
+                segnaGoal(0,66,prob,rndGioca,i);
             }
             //codice di richiamo all'infortunio
             if(prob >= 0 && prob <= 3){
@@ -109,6 +81,16 @@ public class Partita {
         }
     }
 
+    public void segnaGoal(int probMin, int probMax, int prob, int rndGioca, int i){
+        if(prob>probMin&&prob<probMax){
+            squadraTrasferta.setGoal(squadraTrasferta.getGoal() + 1);
+            gM.stampaGoal(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
+        }
+        else{
+            squadraCasa.setGoal(squadraCasa.getGoal() + 1);
+            gM.stampaGoal(squadraCasa, squadraCasa.getGiocatoreN(rndGioca),i);
+        }
+    }
     /**
      * 
      * @return 
