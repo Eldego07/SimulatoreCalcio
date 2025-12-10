@@ -5,24 +5,24 @@
 package simulatorecalcio;
 
 /**
- *
+ * Classe Centrocampista che eredita da Giocatore
  * @author casolaro.diego
  */
 public class Centrocampista extends Giocatore {
     
     /**Costruttore
      * Costruttore di un Centrocampista
-     * @param nome nome dell'Centrocampista
-     * @param cognome cognome dell'Centrocampista
-     * @param forza forza dell'Centrocampista
+     * @param nome nome del Centrocampista
+     * @param cognome cognome del Centrocampista
+     * @param forza forza del Centrocampista
      */
     public Centrocampista(String nome, String cognome, int forza){
         super (nome, cognome, forza);
     }
     
     /**Override del metodo infortunio
-     * Infortunio che rimuove la forza all'Centrocampista
-     * @param danno di quanto si indebolisce l'Centrocampista
+     * Infortunio che rimuove la forza al Centrocampista
+     * @param danno di quanto si indebolisce il Centrocampista
      */
     @Override
     public void infortunio(int danno){

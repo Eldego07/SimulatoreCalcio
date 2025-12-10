@@ -5,7 +5,7 @@
 package simulatorecalcio;
 
 /**
- *
+ * Classe Attaccante che eredita da Giocatore
  * @author casolaro.diego
  */
 public class Attaccante extends Giocatore{

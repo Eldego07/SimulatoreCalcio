@@ -59,89 +59,90 @@ public class Squadra {
     }
     
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo nome
+     * @return l'attributo nome
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo giocatori
+     * @param n l'indice del giocatore da restituire
+     * @return il giocatore
      */
     public Giocatore getGiocatoreN(int n) {
         return giocatori.get(n);
     }
     
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo stadio
+     * @return l'attributo stadio
      */
     public String getStadio() {
         return stadio;
     }
 
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo forzaTot
+     * @return l'attributo forzaTot
      */
     public int getForzaTot() {
         return forzaTot;
     }
 
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo difesaTot
+     * @return l'attributo difesaTot
      */
     public int getDifesaTot() {
         return difesaTot;
     }
     
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo goal
+     * @return l'attributo goal
      */
     public int getGoal() {
         return goal;
     }
     
     /**
-     * 
-     * @return 
+     * Metodo get dell'attributo giocatori
+     * @return l'attributo giocatori
      */
     public ArrayList<Giocatore> getGiocatori() {
         return giocatori;
     }
 
     /**
-     * 
-     * @param nome 
+     * Metodo set dell'attributo nome
+     * @param nome il nome da impostare
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     /**
-     * 
-     * @param stadio 
+     * Metodo set dell'attributo stadio
+     * @param stadio lo stadio da impostare
      */
     public void setStadio(String stadio) {
         this.stadio = stadio;
     }
     
     /**
-     * 
-     * @param goal
+     * Metodo set dell'attributo goal
+     * @param goal i goal da impostare
      */
     public void setGoal(int goal) {
         this.goal = goal;
     }
 
-    /**
+    /**Override del metodo equals
      * 
-     * @param obj
-     * @return 
+     * @param obj squadra con cui confrontarla
+     * @return true se è uguale
      */
     @Override
     public boolean equals(Object obj) {
@@ -158,9 +159,9 @@ public class Squadra {
         return Objects.equals(this.nome, other.nome);
     }
 
-    /**
+    /**Override del metodo toString
      * 
-     * @return 
+     * @return il nuovo output della classe Squadra
      */
     @Override
     public String toString() {

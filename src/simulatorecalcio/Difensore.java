@@ -5,24 +5,24 @@
 package simulatorecalcio;
 
 /**
- *
+ * Classe Difensore che eredita da Giocatore
  * @author casolaro.diego
  */
 public class Difensore extends Giocatore{
     
     /**Costruttore
      * Costruttore di un Difensore
-     * @param nome nome dell'Difensore
-     * @param cognome cognome dell'Difensore
-     * @param forza forza dell'Difensore
+     * @param nome nome del Difensore
+     * @param cognome cognome del Difensore
+     * @param forza forza del Difensore
      */
     public Difensore( String nome, String cognome, int forza) {
         super(nome, cognome, forza);
     }
     
     /**Override del metodo infortunio
-     * Infortunio che rimuove la forza all'Difensore
-     * @param danno di quanto si indebolisce l'Difensore
+     * Infortunio che rimuove la forza al Difensore
+     * @param danno di quanto si indebolisce il Difensore
      */
     @Override
     public void infortunio(int danno){

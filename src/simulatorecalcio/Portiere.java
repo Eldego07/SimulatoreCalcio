@@ -5,7 +5,7 @@
 package simulatorecalcio;
 
 /**
- *
+ * Classe Portiere che eredita da Giocatore
  * @author casolaro.diego
  */
 public class Portiere extends Giocatore{
@@ -13,9 +13,10 @@ public class Portiere extends Giocatore{
     
     /**Costruttore
      * Costruttore di un Portiere
-     * @param nome nome dell'Portiere
-     * @param cognome cognome dell'Portiere
-     * @param forza forza dell'Portiere
+     * @param nome nome del Portiere
+     * @param cognome cognome del Portiere
+     * @param forza forza del Portiere
+     * @param difesa difesa del Portiere
      */
     public Portiere(String nome, String cognome, int forza, int difesa){
         super(nome,cognome,forza);
@@ -23,8 +24,8 @@ public class Portiere extends Giocatore{
     }
     
     /**Override del metodo infortunio
-     * Infortunio che rimuove la forza all'Portiere
-     * @param danno di quanto si indebolisce l'Portiere
+     * Infortunio che rimuove la forza al Portiere
+     * @param danno di quanto si indebolisce il Portiere
      */
     @Override
     public void infortunio(int danno){
@@ -35,7 +36,6 @@ public class Portiere extends Giocatore{
     }
 
     /**Metodo getDifesa
-     * 
      * @return restituisce la difesa del Portiere
      */
     public int getDifesa() {
@@ -51,7 +51,7 @@ public class Portiere extends Giocatore{
 
     /**Override del metodo equals
      * 
-     * @param obj portiere con qui confrontarlo
+     * @param obj portiere con cui confrontarlo
      * @return true se è uguale
      */
     @Override

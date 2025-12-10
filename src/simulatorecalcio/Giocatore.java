@@ -85,7 +85,7 @@ public class Giocatore {
 
     /**Override del metodo equals
      * 
-     * @param obj giocatore con qui confrontarlo
+     * @param obj giocatore con cui confrontarlo
      * @return true se è uguale
      */
     @Override
