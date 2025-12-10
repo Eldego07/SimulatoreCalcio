@@ -11,11 +11,21 @@ package simulatorecalcio;
 public class Portiere extends Giocatore{
     private int difesa;
     
+    /**Costruttore
+     * Costruttore di un Portiere
+     * @param nome nome dell'Portiere
+     * @param cognome cognome dell'Portiere
+     * @param forza forza dell'Portiere
+     */
     public Portiere(String nome, String cognome, int forza, int difesa){
         super(nome,cognome,forza);
         this.difesa=difesa;
     }
     
+    /**Override del metodo infortunio
+     * Infortunio che rimuove la forza all'Portiere
+     * @param danno di quanto si indebolisce l'Portiere
+     */
     @Override
     public void infortunio(int danno){
         this.forza-=danno+1;
@@ -24,15 +34,26 @@ public class Portiere extends Giocatore{
         }
     }
 
+    /**Metodo getDifesa
+     * 
+     * @return restituisce la difesa del Portiere
+     */
     public int getDifesa() {
         return difesa;
     }
 
+    /**Metodo setDifesa
+     * Imposta il valore di difesa del Portiere
+     */
     public void setDifesa(int difesa) {
         this.difesa = difesa;
     }
 
-
+    /**Override del metodo equals
+     * 
+     * @param obj portiere con qui confrontarlo
+     * @return true se è uguale
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -48,6 +69,10 @@ public class Portiere extends Giocatore{
         return this.difesa == other.difesa;
     }
 
+    /**Override del metodo toString
+     * 
+     * @return il nuovo output della classe Portiere
+     */
     @Override
     public String toString() {
         return "portiere {" + super.toString() + ", " + difesa + " di difesa}";
