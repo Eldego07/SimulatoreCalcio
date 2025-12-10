@@ -1,11 +1,3 @@
-SIMULATORE CALCIO
+Per iniziare, avvia il codice tramite un IDE (ad esempio NetBeans). All’esecuzione ti verrà richiesto di selezionare la squadra di casa, indicando il numero corrispondente. Successivamente dovrai scegliere, sempre tramite numero, la squadra in trasferta.
 
-
-
-ISTRUZIONI
-
-L’interfaccia è composta da un semplice command prompt dove le uniche cose che l’utente deve inserire sono:
-1) Quale squadra gioca in casa.
-2) Quale squadra gioca in trasferta.
-3) Quali sono le squadre che giocheranno
-Una volta fatto ciò il programma darà in output l’intera partita come descritta precedentemente.
+A questo punto la partita si avvierà automaticamente: il programma mostrerà una cronaca che, in circa 15 secondi, simulerà lo svolgimento dei 90 minuti di gioco.
