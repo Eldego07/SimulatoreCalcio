@@ -78,6 +78,8 @@ public class Partita {
             } catch (InterruptedException ex) {
                 System.getLogger(GestoreMessaggi.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
             }
+            forzaC = squadraCasa.getForzaTot();
+            forzaT = squadraTrasferta.getForzaTot();
         }
     }
 
