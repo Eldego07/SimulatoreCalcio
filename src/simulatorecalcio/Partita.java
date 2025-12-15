@@ -72,14 +72,14 @@ public class Partita {
                    squadraTrasferta.getGiocatoreN(rndGioca).infortunio(danno);
                    gM.stampaInfortunio(squadraTrasferta, squadraTrasferta.getGiocatoreN(rndGioca),i);
                 }
+                forzaC = squadraCasa.getForzaTot();
+                forzaT = squadraTrasferta.getForzaTot();
             }
             try {
                 Thread.sleep(167);
             } catch (InterruptedException ex) {
                 System.getLogger(GestoreMessaggi.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
             }
-            forzaC = squadraCasa.getForzaTot();
-            forzaT = squadraTrasferta.getForzaTot();
         }
     }
 
