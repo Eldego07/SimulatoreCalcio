@@ -2857,7 +2857,7 @@ Cristian,Alejandro,69,Centrocampista,Universidad Catolica
 Jesus,Emanuel,69,Centrocampista,Sporting Cristal
 Charles,James,70,Difensore,West Bromwich Albion
 Alexander,Roldan,70,Difensore,Seattle Sounders FC
-Jesse,Bosch,66,Centrocampista,PortiereS Katowice
+Jesse,Bosch,66,Centrocampista,GKS Katowice
 Marco,Brescianini,71,Centrocampista,Atalanta
 Welington,Damascena,72,Difensore,Southampton
 Federico,Agustin,72,Difensore,River Plate
@@ -3355,7 +3355,7 @@ Bas,Edo,70,Difensore,FC Twente
 Luca,Vignali,69,Difensore,Spezia
 Bryan,Gil,78,Centrocampista,Girona FC
 Luis,Henrique,68,Centrocampista,CD Leganes
-Mateusz,Kowalczyk,68,Centrocampista,PortiereS Katowice
+Mateusz,Kowalczyk,68,Centrocampista,GKS Katowice
 Christian,Neiva,70,Difensore,AVS Futebol SAD
 Guido,Marcelo,74,Attaccante,Estudiantes de La Plata
 Leo,Patrick,71,Centrocampista,FC Basel 1893
@@ -4391,7 +4391,7 @@ Vicente,Tomas,72,Centrocampista,Colo-Colo
 Maximilian,James,72,Difensore,Rangers FC
 Tyrone,Deon,78,Difensore,Aston Villa
 Bryn,Andrew,64,Centrocampista,Harrogate Town
-Bartosz,Nowak,68,Attaccante,PortiereS Katowice
+Bartosz,Nowak,68,Attaccante,GKS Katowice
 Tidiane,Keita,67,Centrocampista,CFR Cluj
 Pelle,Elkjaer,71,Centrocampista,Norwich City
 Pontus,Bror,65,Centrocampista,BK Hacken
@@ -5499,7 +5499,7 @@ Jonas,Hofmann,63,Centrocampista,FC Energie Cottbus
 Anderson,Andres,67,Attaccante,FC Dallas
 Sirlord,Calvin,69,Attaccante,FC Heidenheim 1846
 Justin,Omoregie,66,Centrocampista,FC Red Bull Salzburg
-Marcin,Wasielewski,68,Centrocampista,PortiereS Katowice
+Marcin,Wasielewski,68,Centrocampista,GKS Katowice
 Enrique,Lofolomo,66,Centrocampista,SV Zulte Waregem
 Ivan,Andres,70,Centrocampista,Once Caldas
 Florian,Rieder,63,Attaccante,WSG Tirol
@@ -5619,7 +5619,7 @@ Nirayi,Nagarr,59,Attaccante,Mohammedan SC
 Nils,De,65,Centrocampista,Cercle Brugge KSV
 Diogo,Ferreira,66,Centrocampista,SL Benfica
 Sasha,Julian,72,Difensore,Lanus
-Alan,Czerwinski,67,Difensore,PortiereS Katowice
+Alan,Czerwinski,67,Difensore,GKS Katowice
 Dennis,Chessa,66,Attaccante,SSV Ulm 1846
 Mads,Larsen,66,Centrocampista,Silkeborg IF
 Aaron,Anselmino,70,Difensore,Borussia Dortmund
@@ -6662,7 +6662,7 @@ Naci,Unuvar,69,Centrocampista,FC Twente
 Jonas,Lindberg,62,Attaccante,GAIS
 Adrian,Grbic,67,Attaccante,FC Luzern
 Patricio,Julian,70,Attaccante,Bolivar
-Kacper,Lukasiak,64,Centrocampista,PortiereS Katowice
+Kacper,Lukasiak,64,Centrocampista,GKS Katowice
 Jake,Joseph,63,Centrocampista,Blackburn Rovers
 Ethan,Rupert,77,Difensore,Brentford
 Luis,Antonio,69,Attaccante,Cerro Porteno
@@ -6743,7 +6743,7 @@ Erik,Weinhauer,63,Centrocampista,FC Erzgebirge Aue
 Alejandro,Calvo,66,Attaccante,FC Andorra
 Alex,Adrian,75,Attaccante,Independiente Rivadavia
 Rasmus,Thellufsen,62,Centrocampista,Bryne FK
-Sebastian,Milewski,64,Centrocampista,PortiereS Katowice
+Sebastian,Milewski,64,Centrocampista,GKS Katowice
 Andres,de,70,Centrocampista,Atletico Nacional
 Marco,Armellino,66,Centrocampista,Avellino
 Omar,Correia,64,Centrocampista,SS Juve Stabia
@@ -6905,7 +6905,7 @@ Inaki,Ruperez,64,Difensore,Real Sociedad de Futbol B
 Nazareno,Fernandez,73,Difensore,Racing Club
 Shane,Farrell,60,Centrocampista,Drogheda United
 Kener,Gonzalez,61,Centrocampista,America de Cali
-Grzegorz,Rogala,62,Centrocampista,PortiereS Katowice
+Grzegorz,Rogala,62,Centrocampista,GKS Katowice
 Deabeas,Nii,69,Centrocampista,Zhejiang FC
 Elias,Mar,66,Attaccante,Meizhou Hakka
 Benjamin,House,64,Attaccante,Lincoln City
@@ -7366,7 +7366,7 @@ Sergio,Fabian,62,Centrocampista,Gualberto Villarroel SJ
 Mouhamed,Diop,64,Centrocampista,EAttaccanteAC Troyes
 Julio,Hector,65,Centrocampista,San Antonio Bulo Bulo
 Mikel,Villanueva,71,Difensore,Al Fayha
-Eman,Markovic,66,Attaccante,PortiereS Katowice
+Eman,Markovic,66,Attaccante,GKS Katowice
 Severino,Pedro,69,Attaccante,Fortaleza
 Lorent,Tolaj,65,Attaccante,Plymouth Argyle
 Enrique,Jesus,75,Difensore,Sevilla FC
@@ -7630,7 +7630,7 @@ Dennis,Srbeny,67,Attaccante,SpVgg Greuther Furth
 Renato,Peter,70,Centrocampista,Sao Paulo
 Luka-Mikael,Hyrylainen,66,Centrocampista,FC Magdeburg
 Macaulay,Gillesphey,66,Difensore,Charlton Athletic
-Jakub,Lukowski,63,Centrocampista,PortiereS Katowice
+Jakub,Lukowski,63,Centrocampista,GKS Katowice
 Tom,Peder,68,Difensore,Mjallby AIF
 Abdoul,Guemissongui,68,Centrocampista,RC Strasbourg Alsace
 Gonzalo,Javier,69,Attaccante,Barracas Central
@@ -8121,7 +8121,7 @@ Asker,Beck,62,Centrocampista,Viborg FF
 Mats,Pedersen,61,Centrocampista,Hamarkameratene
 Joyeux,Masanka,61,Centrocampista,Difensore Leipzig
 Thomas,Adam,62,Difensore,Salford City
-Borja,Galan,65,Centrocampista,PortiereS Katowice
+Borja,Galan,65,Centrocampista,GKS Katowice
 Omari,Joshua,64,Centrocampista,Tranmere Rovers
 Lalengmawia,Ralte,65,Centrocampista,Mohun Bagan Super Giant
 Luca,Juliano,67,Centrocampista,Rot-Weiss Essen
@@ -8384,7 +8384,7 @@ Gaston,Suso,72,Difensore,Gimnasia y Esgrima La Plata
 Gustavo,Nunes,65,Centrocampista,Brentford
 Jose,Miguel,72,Difensore,Casa Pia
 Mikkel,Kaufmann,68,Attaccante,FC Heidenheim 1846
-Maciej,Rosolek,64,Attaccante,PortiereS Katowice
+Maciej,Rosolek,64,Attaccante,GKS Katowice
 George,Broadbent,62,Centrocampista,Doncaster Rovers
 Karl,Edouard,68,Attaccante,Levante UD
 Noah,Beaumont,59,Centrocampista,Preston North End
@@ -9099,7 +9099,7 @@ Charbel,Anthuan,62,Difensore,CD Castellon
 Jorge,Enrique,65,Difensore,San Antonio Bulo Bulo
 Ionut,Cercel,63,Difensore,FCSB
 Dirk,Abels,65,Difensore,Grasshopper Club Zurich
-Filip,Rejczyk,58,Centrocampista,PortiereS Katowice
+Filip,Rejczyk,58,Centrocampista,GKS Katowice
 Mika,Baur,64,Centrocampista,SC Paderborn 07
 Guilherme,Henriques,62,Attaccante,Union Saint-Gilloise
 Lukas,Josef,66,Difensore,SC Rheindorf Altach
@@ -9450,7 +9450,7 @@ Glenn,Bell,64,Centrocampista,Doncaster Rovers
 Matthew,Timothy,59,Attaccante,Notts County
 Esteban,Orozco,63,Difensore,FC Arges
 Marc,Delgado,59,Centrocampista,SD Eibar
-Marcel,Wędrychowski,65,Centrocampista,PortiereS Katowice
+Marcel,Wędrychowski,65,Centrocampista,GKS Katowice
 Benjamin,Harvey,66,Difensore,Leicester City
 Idrissa,Gueye,70,Attaccante,Udinese
 Nathan,Lee,67,Difensore,Philadelphia Union
@@ -9548,7 +9548,7 @@ Lee,Anthony,59,Attaccante,Cheltenham Town
 Lucas,Gabriel,68,Difensore,Bruk-Bet Termalica Nieciecza
 Syver,Skundberg,59,Centrocampista,Kristiansund BK
 Gautier,Lloris,74,Difensore,Le Havre AC
-Konrad,Gruszkowski,64,Difensore,PortiereS Katowice
+Konrad,Gruszkowski,64,Difensore,GKS Katowice
 Darragh,Nugent,58,Centrocampista,Shamrock Rovers
 Noah,Fatar,61,Attaccante,US Boulogne Cote d'Opale
 Mattis,Hoppe,61,Difensore,FC Ingolstadt 04
@@ -9581,7 +9581,7 @@ Brian,Anunga,63,Centrocampista,FC Cincinnati
 Christopher,Michael,61,Attaccante,Brisbane Roar
 Bryan,Benjamin,61,Attaccante,Lech Poznan
 Julien,Boyer,64,Difensore,US Boulogne Cote d'Opale
-Adam,Zreľak,63,Attaccante,PortiereS Katowice
+Adam,Zreľak,63,Attaccante,GKS Katowice
 Joshua,James,59,Centrocampista,Salford City
 Carlos,Alfredo,64,Centrocampista,Mushuc Runa
 Rodrigo,Duarte,68,Attaccante,Sporting CP
@@ -11190,7 +11190,7 @@ Ivan,Jukic,64,Centrocampista,FC Anyang
 Dan,Edwards,57,Difensore,Wellington Phoenix
 Aaron,Alex,62,Attaccante,Walsall
 Emanuel,Natanael,66,Centrocampista,CA Aldosivi
-Arkadiusz,Jędrych,68,Difensore,PortiereS Katowice
+Arkadiusz,Jędrych,68,Difensore,GKS Katowice
 Tomas,Alexander,64,Centrocampista,CA Banfield
 Mariano,Gaston,63,Difensore,Deportivo Riestra
 Carlos,Quintana,74,Difensore,Rosario Central
@@ -11391,7 +11391,7 @@ Rayvien,Rosario,60,Centrocampista,Excelsior
 Kane,Ruudi,60,Attaccante,Barrow
 Ryan,Joseph,64,Difensore,Mansfield Town
 Valentin,Lassig,62,Centrocampista,TSG 1899 Hoffenheim II
-Mateusz,Marzec,62,Centrocampista,PortiereS Katowice
+Mateusz,Marzec,62,Centrocampista,GKS Katowice
 Kobe,Lloyd,62,Difensore,Toronto FC
 Tomas,David,65,Attaccante,Atletico Grau
 Ben,Brannan,58,Difensore,Kilmarnock
@@ -11494,7 +11494,7 @@ Bi,Christ,62,Attaccante,KAA Gent
 Thomas,Richard,67,Difensore,Rotherham United
 Felix,Bacher,69,Difensore,GD Estoril Praia
 Tulio,Sebastiao,61,Difensore,Vasco da Gama
-Marten,Kuusk,66,Difensore,PortiereS Katowice
+Marten,Kuusk,66,Difensore,GKS Katowice
 Yohan,Cedric,64,Difensore,Asociatia Clubul Sportiv Petrolul 52
 Alvaro,Moises,62,Difensore,Atletico Tucuman
 Fabricio,Gabriel,62,Difensore,San Lorenzo de Almagro
@@ -12849,7 +12849,7 @@ Lasse,Qvigstad,61,Difensore,Bryne FK
 Thalisson,Kelven,66,Difensore,Genclerbirligi SK
 Vincenzo,Colangiuli,57,Centrocampista,SSC Bari
 Kamil,Nowogonski,54,Centrocampista,Zaglebie Lubin
-Lukas,Klemenz,65,Difensore,Portiere,S Katowice
+Lukas,Klemenz,65,Difensore,GKS Katowice
 Rio,Hillen,65,Difensore,NAC Breda
 John-Alan,McGrath,62,Difensore,Doncaster Rovers
 Noah,Markmann,63,Difensore,FC Nordsjaelland
@@ -14001,7 +14001,7 @@ Bruno,Ifechukwu,59,Difensore,SC Freiburg
 Bruno,Vilela,53,Attaccante,Sheffield Wednesday
 Nevio,Biner,56,Difensore,FC Sion
 Lalremtluanga,Fanai,50,Centrocampista,Bengaluru FC
-Alan,Brod,55,Centrocampista,PortiereS Katowice
+Alan,Brod,55,Centrocampista,GKS Katowice
 Sultan,Al,50,Difensore,Al Riyadh
 Alan,Enzo,66,Difensore,Tigre
 Mathieu,Mion,57,Difensore,Grenoble Foot 38
@@ -14020,7 +14020,7 @@ Tekcham,Abhishek,53,Difensore,Mohun Bagan Super Giant
 Roggerio,Nyakossi,61,Difensore,Oud-Heverlee Leuven
 Sebastian,Holm,56,Attaccante,Sandefjord Fotball
 Ugurcan,Cakir,80,Portiere,Galatasaray SK
-Aleksander,Paluszek,65,Difensore,PortiereS Katowice
+Aleksander,Paluszek,65,Difensore,GKS Katowice
 Sourav,Das,54,Centrocampista,Jamshedpur FC
 Farrend,James,61,Difensore,Accrington Stanley
 Micah,Aiden,53,Centrocampista,Austin FC
@@ -14881,7 +14881,7 @@ Rohat,Matyar,51,Difensore,Barnet
 David,Gil,70,Portiere,Cadiz CF
 Mohammed,Rafi,53,Difensore,Hyderabad FC
 Kevin,Christian,81,Portiere,Paris FC
-Dawid,Kudla,68,Portiere,PortiereS Katowice
+Dawid,Kudla,68,Portiere,GKS Katowice
 Sagolsem,Bikash,49,Attaccante,Kerala Blasters FC
 Alexander,Jojo,53,Difensore,Shanghai Port
 Jerome,Prior,68,Portiere,Livingston FC
@@ -15005,7 +15005,7 @@ Thomas,David,67,Portiere,Manchester United
 Luiz,Santiago,72,Portiere,Atletico Mineiro
 Amigo,Alfred,69,Portiere,Palermo FC
 Timon,Moritz,69,Portiere,Holstein Kiel
-Bartosz,Jaroszek,59,Difensore,PortiereS Katowice
+Bartosz,Jaroszek,59,Difensore,GKS Katowice
 Andrew,da,75,Portiere,Gil Vicente FC
 Pengbo,Wang,48,Difensore,Yunnan Yukun
 Carlos,Adilson,63,Portiere,Vitoria
@@ -16030,7 +16030,7 @@ Jędrzej,Grobelny,60,Portiere,Arka Gdynia
 Meshary,Sanyor,60,Portiere,Al Qadsiah FC
 Jelle,Van,61,Portiere,Olympique de Marseille
 Louis,Mezerette,58,Portiere,AJ Auxerre
-Rafal,Straczek,61,Portiere,PortiereS Katowice
+Rafal,Straczek,61,Portiere,GKS Katowice
 George,Evans,60,Portiere,Millwall FC
 Emre,Bilgin,64,Portiere,Besiktas JK
 Drake,Steven,67,Portiere,Charlotte FC
@@ -16523,7 +16523,7 @@ Damian,Fernandez,53,Portiere,Rosario Central
 Sahil,Poonia,52,Portiere,Bengaluru FC
 Amrit,Gope,50,Portiere,Jamshedpur FC
 Diego,Gonzalez,57,Portiere,Burgos CF
-Patryk,Szczuka,53,Portiere,PortiereS Katowice
+Patryk,Szczuka,53,Portiere,GKS Katowice
 Sander,Rod,57,Portiere,Kristiansund BK
 Xavier,William,54,Portiere,Nashville SC
 Jai,Ajanovic,50,Portiere,Central Coast Mariners

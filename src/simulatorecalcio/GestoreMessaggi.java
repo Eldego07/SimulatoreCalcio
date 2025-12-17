@@ -37,7 +37,7 @@ public class GestoreMessaggi {
      * @param s2 la squadra in trasferta
      */
     public void stampaStadio(Squadra s1, Squadra s2) {
-        System.out.println("-== Benvenuti allo stadio " + s1.getStadio() + ", dove giocheranno " + s1.getNome() + " e " + s2.getNome() + "! ==-");
+        System.out.println("-== Benvenuti allo stadio del " + s1.getStadio() + ", dove giocheranno " + s1.getNome() + " e " + s2.getNome() + "! ==-");
         System.out.println("");
         try {
             Thread.sleep(1000);
